@@ -1,0 +1,90 @@
+.mfgImage {
+  width: 100%;
+  max-width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.module {
+    text-align: center;
+    color: white;
+    height: 110px;
+    min-height: 100px;
+    max-height: 120px;
+    min-width: 220px;
+    background-color: #112252;
+    border-radius: 2px;
+}
+
+.module:hover {
+  background-color: #F5F5F5;
+  cursor: pointer;
+  color: #112252;
+}
+
+.americanStandard{
+    height: 50px;
+    background-image: url('./app/content/AmericanStandardLogoLight.svg');
+}
+
+.blackSwan {
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.safetyTubs{
+    height: 35px;
+    background-image: url('./app/content/SafetyTubsLogo.svg');
+}
+
+.vpcGlobal{
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.superGreen{
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.yanex{
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.goss{
+    height: 50px;
+    background-image: url('./app/content/GossLogoLight.svg');
+    background-position: center
+}
+
+/* content styles */
+.item {
+	display:table;
+  width: 100%;
+}
+.content {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+    height: 110px;
+    position:relative;
+}
+
+.manufactureText{
+    margin-bottom: 0px;
+}
+
+.stateRep{
+    font-size:10px;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    margin-bottom:5;
+}

@@ -1,0 +1,46 @@
+
+<div class="container-fluid home_main">
+    <div class="row section1 wwb_background">
+        <div class="section_content">
+            <h2>What we believe</h2>
+            <p style="width:25%">
+                At Heartland, we believe in identifying needs before products. We always start by gaining a deep understanding of the problem, then work closely with our manufacturers to connect you with products that drive innovation, flaunt beauty, embrace efficiency, and, most importantly, offer solutions.
+            </p>
+        </div>
+    </div>    
+    <div class="row section2 row-centered">
+        <div class="section_content">
+            <h2>Who we represent</h2>
+            <div *ngFor=" let man of manufacturers" class="col-xs-3 col-centered col-fixed manufacturer">                
+                <manufacturer-card *ngIf="man.cssClassName" [manufacturer]="man"></manufacturer-card>
+                <manufacturer-card-text *ngIf="!man.cssClassName" [manufacturer]="man"></manufacturer-card-text>
+            </div>          
+        </div>
+    </div>
+    <div class="row section3">
+        <div class="section_content">
+            <h2>Meet the team</h2>
+            <br>
+            <div class="col-sm-6"> 
+                <center>    
+                    <div class="placeholder_image">           
+                        <img src='../app/content/placeholder-th.png' style="height:250px;" alt='Placeholder clip art'/>
+                    </div>
+                    <div>
+                        <p>Martin Cranke<br>Owner<br>(918) 461-2569<br>MARTIN@HSREPS.COM</p>
+                    </div>
+                </center>
+            </div>
+            <div class="col-sm-6">                
+                <center>
+                    <div class="placeholder_image">
+                        <img src='../app/content/placeholder-th.png'  style="height:250px;"  alt='Placeholder clip art'/>
+                    </div>
+                    <div>
+                        <p>Becky Cranke<br>Sales Representative</p>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
