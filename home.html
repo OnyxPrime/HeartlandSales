@@ -10,7 +10,7 @@
     </div>    
     <div class="row section2 row-centered">
         <div class="section_content">
-            <h2>Who we represent</h2>
+            <h2 class="section2_title">Who we represent</h2>
             <div *ngFor=" let man of manufacturers" class="col-xs-3 col-centered col-fixed manufacturer">                
                 <manufacturer-card *ngIf="man.cssClassName" [manufacturer]="man"></manufacturer-card>
                 <manufacturer-card-text *ngIf="!man.cssClassName" [manufacturer]="man"></manufacturer-card-text>

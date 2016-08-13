@@ -30,6 +30,9 @@ p {
   min-height: 200px;
   background-color: #F5F5F5;
 }
+.section2_title{
+  text-align: left;
+}
 .section3{
   background-color: #4FD0F5;
   min-height: 200px;
