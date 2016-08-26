@@ -1,11 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute }  from '@angular/router';
+import { ManufacturerService } from '../services/manufacturer.service';
+import { Manufacturer } from '../models/Manufacturer';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   template: `
-    <h2>Page Not Found</h2>
-    `
+    <h2>Manufacturer {{manufacturer.name}}</h2>
+    `,
+  providers: [ManufacturerService]  
 })
-export class ManufacturerDetailComponent {}
+export class ManufacturerDetailComponent {
+  
+  manufacturer: Manufacturer = new Manufacturer();
+  private sub: Subscription;
+  constructor(
+    private service: ManufacturerService,
+    private router: Router,
+    private route: ActivatedRoute
+  ){}
+
+  ngOnInit(){
+    this.sub = this.route.params.subscribe(params => {
+      let id = +params['id'];
+      this.service.getManufacturer(id).then(m=> this.manufacturer = m);
+    });     
+  }
+
+  ngOnDestroy(){
+    this.sub.unsubscribe();
+  }
+}
 
 
 /*

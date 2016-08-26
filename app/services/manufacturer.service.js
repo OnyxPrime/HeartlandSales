@@ -11,9 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var ManufacturerService = (function () {
     function ManufacturerService() {
-    }
-    ManufacturerService.prototype.getManufacturers = function () {
-        var manufacturers = [
+        this.manufacturers = [
             { id: 1, cssClassName: 'americanStandard', name: 'American Standard', statesRepresented: 'OK | KS | MO | AR' },
             { id: 2, cssClassName: '', name: 'Black Swan', statesRepresented: 'OK | KS | Western MO | AR' },
             { id: 3, cssClassName: 'goss', name: 'Goss', statesRepresented: 'OK | KS | MO | AR' },
@@ -22,7 +20,12 @@ var ManufacturerService = (function () {
             { id: 6, cssClassName: '', name: 'Super Green', statesRepresented: 'OK | KS | MO | AR' },
             { id: 7, cssClassName: '', name: 'Yanex', statesRepresented: 'OK | KS | MO | AR' },
         ];
-        return Promise.resolve(manufacturers);
+    }
+    ManufacturerService.prototype.getManufacturers = function () {
+        return Promise.resolve(this.manufacturers);
+    };
+    ManufacturerService.prototype.getManufacturer = function (id) {
+        return Promise.resolve(this.manufacturers).then(function (ms) { return ms.find(function (m) { return m.id === +id; }); });
     };
     ManufacturerService = __decorate([
         core_1.Injectable(), 

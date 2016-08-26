@@ -9,19 +9,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var manufacturer_service_1 = require('../services/manufacturer.service');
 var HomeComponent = (function () {
-    function HomeComponent(manService) {
+    function HomeComponent(manService, router) {
         var _this = this;
+        this.router = router;
         manService.getManufacturers().then(function (x) { return _this.manufacturers = x; });
     }
+    HomeComponent.prototype.onSelect = function (manufacturer) {
+        this.router.navigate(['/Manufacturer', manufacturer.id]);
+    };
     HomeComponent = __decorate([
         core_1.Component({
             templateUrl: './home.html',
             styleUrls: ['node_modules/bootstrap/dist/css/bootstrap.css', 'app/styles/home.component.css'],
             providers: [manufacturer_service_1.ManufacturerService],
         }), 
-        __metadata('design:paramtypes', [manufacturer_service_1.ManufacturerService])
+        __metadata('design:paramtypes', [manufacturer_service_1.ManufacturerService, router_1.Router])
     ], HomeComponent);
     return HomeComponent;
 }());

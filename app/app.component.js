@@ -10,17 +10,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
+var router_2 = require('@angular/router');
 var AppComponent = (function () {
-    function AppComponent() {
+    function AppComponent(router) {
+        this.router = router;
     }
+    AppComponent.prototype.OnSelect = function () {
+        this.router.navigate(['/']);
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
             //templateUrl: 'home.html'
-            template: "<nav class=\"hs_navbar\">    \n    <img src=\"./app/content/Hearland_Logo_200.png\" height=\"50\"/>\n</nav>\n\n<router-outlet></router-outlet>",
+            template: "<nav class=\"hs_navbar\">    \n    <img src=\"./app/content/Hearland_Logo_200.png\" height=\"50\" (click)=\"OnSelect()\" style=\"cursor: hand\"/>\n</nav>\n\n<router-outlet></router-outlet>",
             directives: [router_1.ROUTER_DIRECTIVES]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_2.Router])
     ], AppComponent);
     return AppComponent;
 }());

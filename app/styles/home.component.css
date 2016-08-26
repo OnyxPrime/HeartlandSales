@@ -70,6 +70,9 @@ p {
 .wwr_c{
   align-content: center;
 }
+.wwr_text{
+  width: 25%;
+}
 
 /* centered columns styles */
 .row-centered {
@@ -93,6 +96,9 @@ p {
     .module {
       font-size: 10px;
       max-height: 75px; }
+      .wwr_text{
+        width: 100%;
+      }
 }
 @media (max-width: 1024px) {
     .grid {

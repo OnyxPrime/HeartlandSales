@@ -5,8 +5,8 @@ import { HomeComponent} from './Home/home.component';
 import { ManufacturerCardComponent } from './Home/manufacturer-card.component'
 
 const routes: Routes = [
-  { path: '**', component: HomeComponent },
-  { path: 'Manufacturer/:id', component: ManufacturerDetailComponent }
+  { path: 'Manufacturer/:id', component: ManufacturerDetailComponent },
+  { path: '**', component: HomeComponent }
 ];
 
 export const routing = RouterModule.forRoot(routes);

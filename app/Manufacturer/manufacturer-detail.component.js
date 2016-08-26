@@ -9,14 +9,32 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
+var manufacturer_service_1 = require('../services/manufacturer.service');
+var Manufacturer_1 = require('../models/Manufacturer');
 var ManufacturerDetailComponent = (function () {
-    function ManufacturerDetailComponent() {
+    function ManufacturerDetailComponent(service, router, route) {
+        this.service = service;
+        this.router = router;
+        this.route = route;
+        this.manufacturer = new Manufacturer_1.Manufacturer();
     }
+    ManufacturerDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.sub = this.route.params.subscribe(function (params) {
+            var id = +params['id'];
+            _this.service.getManufacturer(id).then(function (m) { return _this.manufacturer = m; });
+        });
+    };
+    ManufacturerDetailComponent.prototype.ngOnDestroy = function () {
+        this.sub.unsubscribe();
+    };
     ManufacturerDetailComponent = __decorate([
         core_1.Component({
-            template: "\n    <h2>Page Not Found</h2>\n    "
+            template: "\n    <h2>Manufacturer {{manufacturer.name}}</h2>\n    ",
+            providers: [manufacturer_service_1.ManufacturerService]
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [manufacturer_service_1.ManufacturerService, router_1.Router, router_1.ActivatedRoute])
     ], ManufacturerDetailComponent);
     return ManufacturerDetailComponent;
 }());

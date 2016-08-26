@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
+import { Router, ActivatedRoute }  from '@angular/router';
 import { ManufacturerService } from '../services/manufacturer.service';
-import { Manufacturer } from '../models/Manufacturer'
+import { Manufacturer } from '../models/Manufacturer';
 
 @Component({
   templateUrl: './home.html',
@@ -11,8 +12,12 @@ export class HomeComponent {
   
   manufacturers: Manufacturer[];
 
-  constructor(manService: ManufacturerService){
+  constructor(manService: ManufacturerService, private router: Router){
     manService.getManufacturers().then(x=>this.manufacturers = x );
+  }
+
+  onSelect(manufacturer: Manufacturer){
+    this.router.navigate(['/Manufacturer', manufacturer.id]);
   }
 }
 
