@@ -9,13 +9,13 @@
     "pree2e": "npm run webdriver:update",
     "e2e": "tsc && concurrently \"http-server -s\" \"protractor protractor.config.js\" --kill-others --success first",
     "lint": "tslint ./app/**/*.ts -t verbose",
-    "lite": "lite-server",
+    "lite": "node_modules\\.bin\\lite-server",
     "postinstall": "typings install",
     "test": "tsc && concurrently \"tsc -w\" \"karma start karma.conf.js\"",
     "test-once": "tsc && karma start karma.conf.js --single-run",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "typings": "typings",
+    "tsc": "node_modules\\.bin\\tsc",
+    "tsc:w": "node_modules\\.bin\\tsc -w",
+    "typings": "node_modules\\.bin\\typings",
     "webdriver:update": "webdriver-manager update"
   },
   "keywords": [],
@@ -40,7 +40,11 @@
     "zone.js": "^0.6.12",
 
     "angular2-in-memory-web-api": "0.0.15",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+
+    "concurrently": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.0.4"
   },
   "devDependencies": {
     "concurrently": "^2.2.0",

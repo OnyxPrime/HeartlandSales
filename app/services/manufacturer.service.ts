@@ -12,8 +12,8 @@ export class ManufacturerService{
             {id: 6, cssClassName: '', name:'Super Green', statesRepresented:'OK | KS | MO | AR'},
             {id: 7, cssClassName: '', name:'Yanex', statesRepresented:'OK | KS | MO | AR'},
         ];
-    getManufacturers() {       
         
+    getManufacturers() {       
         return Promise.resolve(this.manufacturers);
     }
 
