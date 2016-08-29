@@ -2,7 +2,7 @@
   "name": "HeartlandSales",
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
-  "engines":{"node":"5.4.0"},
+  "engines":{"node":"6.3.0"},
   "scripts": {
     "start": "node tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "concurrently": "node_modules\\.bin\\concurrently",
