@@ -8,9 +8,20 @@ import { Manufacturer } from '../models/manufacturer';
     template:`
     <div class="module hero">
         <div class="item">
-            <div class="content">
-                <p class="manufactureText">{{manufacturer.name}}</p>
-                <p class="stateRep">{{manufacturer.statesRepresented}}</p>
+            <div class="col-xs-12 col-sm-2">           
+                
+                    <div class="row">
+                        <div class="manufactureText">{{manufacturer.name}}</div>
+                    </div>
+                    <div class="row">   
+                        <p class="stateRep vcenter">{{manufacturer.statesRepresented}}</p>
+                    </div>
+                
+            </div>
+            <div class="hidden-xs col-sm-10 vertical-align content mfgCol">
+                <div class="mfgBorder">
+                </div>
+                <div class="mfgBlurb">{{manufacturer.blurb}}</div>
             </div>
         </div>
     </div>

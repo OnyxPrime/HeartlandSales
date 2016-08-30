@@ -11,7 +11,7 @@
     <div class="row section2 row-centered">
         <div class="section_content">
             <h2 class="section2_title">Who we represent</h2>
-            <div *ngFor=" let man of manufacturers" class="col-xs-3 col-centered col-fixed manufacturer" (click)="onSelect(man)">                
+            <div *ngFor=" let man of manufacturers" class="col-xs-12 col-centered col-fixed manufacturer" (click)="onSelect(man)">                
                 <manufacturer-card *ngIf="man.cssClassName" [manufacturer]="man"></manufacturer-card>
                 <manufacturer-card-text *ngIf="!man.cssClassName" [manufacturer]="man"></manufacturer-card-text>
             </div>          
@@ -19,27 +19,11 @@
     </div>
     <div class="row section3">
         <div class="section_content">
-            <h2>Meet the team</h2>
-            <br>
+            <h2>Contact Us</h2>
             <div class="col-sm-6"> 
-                <center>    
-                    <div class="placeholder_image">           
-                        <img src='../app/content/placeholder-th.png' style="height:250px;" alt='Placeholder clip art'/>
-                    </div>
                     <div>
                         <p>Martin Cranke<br>Owner<br>(918) 461-2569<br>MARTIN@HSREPS.COM</p>
                     </div>
-                </center>
-            </div>
-            <div class="col-sm-6">                
-                <center>
-                    <div class="placeholder_image">
-                        <img src='../app/content/placeholder-th.png'  style="height:250px;"  alt='Placeholder clip art'/>
-                    </div>
-                    <div>
-                        <p>Becky Cranke<br>Sales Representative</p>
-                    </div>
-                </center>
             </div>
         </div>
     </div>
