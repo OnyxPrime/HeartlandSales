@@ -1,0 +1,137 @@
+.mfgImage {
+  width: 100%;
+  max-width:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.module {
+    text-align: center;
+    color: white;
+    height: 110px;
+    min-height: 100px;
+    
+    min-width: 220px;
+    background-color: #112252;
+    border-radius: 2px;
+}
+
+.module:hover {
+  cursor: pointer;
+}
+
+.americanStandard{
+    height: 50px;
+    width:auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/AmericanStandardLogoLight.svg');
+}
+
+.blackSwan {
+    height: 50px;
+    background-image: url('./app/content/BlackSwanLogoLight.svg');
+}
+
+.safetyTubs{
+    height: 35px;
+    width: auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/SafetyTubsLogo.svg');
+}
+
+.vpcGlobal{
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.superGreen{
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.yanex{
+
+    height: 35px;
+    background-image: url('./app/content/GossLogoLight.svg');
+}
+
+.goss{
+    height: 50px;
+    width: auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/GossLogoLight.svg');
+    background-position: center
+}
+
+/* content styles */
+.item {
+	display:table;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+	display:table-cell;
+	vertical-align:middle;
+	text-align:center;
+    height: 110px;
+    position:relative;
+    padding: 0 auto;
+}
+
+.manufactureText{
+    margin-bottom: 10px;
+    width:100%;
+}
+
+.mfgBorder{
+    background: white;
+    height:100px;
+    width:1px;
+    margin-top: 2px;
+    margin-right: 0px;
+    position: absolute;
+}
+
+
+.stateRep{
+    font-size:10px;
+    position: relative;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.mfgBlurb{
+    text-align: left;
+    margin-left: 15px;
+    text-overflow: wrap;
+    position: relative;
+}
+
+.mfgStuff{
+    align-content: center;
+    vertical-align: middle;
+    height: 100%;
+    -webkit-box-display: list-item;
+    -moz-box-display: list-item;
+    display: list-item;
+}
+
+.mfgRow{
+    height: 100%;
+}
+
+.mfgCol{
+  padding: 0;
+}

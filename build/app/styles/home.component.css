@@ -1,0 +1,110 @@
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+h2 {
+  font-family: 'Lato';
+  font-weight: 900;
+}
+p {
+  font-family: 'Lato';
+  font-weight: 300;
+}
+.home_main{
+  margin-top: 0;
+}
+.section1 {
+  padding-top: 5px;
+  background-color: #F5F5F5;
+  min-height: 200px;
+}
+.section_content {
+  margin-right:30;
+  margin-left:30;
+}
+.section2{
+  margin-top:0;
+  margin-bottom:0;
+  min-height: 200px;
+  background-color: #F5F5F5;
+}
+.section2_title{
+  text-align: left;
+}
+.section3{
+  background-color: #4FD0F5;
+  min-height: 200px;
+}
+.section3 .section_content
+{
+  color: #F5F5F5;
+}
+
+.manufacturer {
+  height: 120px;
+}
+
+.placeholder_image{
+  background-color:#F5F5F5; 
+  width:300; 
+  padding-top:10;
+  padding-bottom:2;
+  margin-bottom:10px;
+}
+
+.wwb_background{
+  background-image: url('./app/content/heartland_hero_1024.png');
+  background-repeat: no-repeat;
+  background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.wwb_p{
+  width:25%;
+}
+.wwr_c{
+  align-content: center;
+}
+.wwr_text{
+  width: 25%;
+}
+
+/* centered columns styles */
+.row-centered {
+    text-align:center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.col-fixed {
+    /* custom width */
+    /*width:320px;*/
+}
+
+
+@media (max-width: 600px) {
+    .module {
+      font-size: 10px;
+      max-height: 75px; }
+      .wwr_text{
+        width: 100%;
+      }
+}
+@media (max-width: 1024px) {
+    .grid {
+      margin: 0;
+    }
+    .module {
+      min-width: 60px;
+    }
+}
