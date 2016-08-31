@@ -4,7 +4,7 @@
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "engines":{"node":"6.3.0"},
   "scripts": {
-    //"start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    
     "start": "prod",
     "concurrently": "concurrently",
     "docker-build": "docker build -t ng2-quickstart .",
