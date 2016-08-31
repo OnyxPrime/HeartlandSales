@@ -4,4 +4,5 @@ export class Manufacturer {
     cssClassName: string;
     statesRepresented: string;
     blurb: string;
+    image: string;
 }
