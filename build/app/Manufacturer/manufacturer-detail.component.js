@@ -31,7 +31,7 @@ var ManufacturerDetailComponent = (function () {
     };
     ManufacturerDetailComponent = __decorate([
         core_1.Component({
-            template: "\n    <h2>Manufacturer {{manufacturer.name}}</h2>\n    ",
+            template: "\n    <h2 *ngIf=\"!manufacturer.cssClassName\" >Manufacturer {{manufacturer.name}}</h2>\n    <div *ngIf=\"manufacturer.cssClassName\">\n      <br />\n      <img src=\"app/content/{{manufacturer.image}}\" />\n      <br /><br />\n    </div>\n    <div>{{manufacturer.blurb}}</div>\n    ",
             providers: [manufacturer_service_1.ManufacturerService]
         }), 
         __metadata('design:paramtypes', [manufacturer_service_1.ManufacturerService, router_1.Router, router_1.ActivatedRoute])
