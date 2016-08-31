@@ -5,7 +5,7 @@
   "engines":{"node":"6.3.0"},
   "scripts": {
     
-    "start": "prod",
+    "start": "npm run prod",
     "concurrently": "concurrently",
     "docker-build": "docker build -t ng2-quickstart .",
     "docker": "npm run docker-build && docker run -it --rm -p 3000:3000 -p 3001:3001 ng2-quickstart",
