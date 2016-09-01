@@ -22,7 +22,7 @@ var HomeComponent = (function () {
     };
     HomeComponent = __decorate([
         core_1.Component({
-            templateUrl: './home.html',
+            templateUrl: './app/views/home.html',
             styleUrls: ['node_modules/bootstrap/dist/css/bootstrap.css', 'app/styles/home.component.css'],
             providers: [manufacturer_service_1.ManufacturerService],
         }), 

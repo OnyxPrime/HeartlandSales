@@ -5,15 +5,7 @@ import { Manufacturer } from '../models/Manufacturer';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
-  template: `
-    <h2 *ngIf="!manufacturer.cssClassName" >Manufacturer {{manufacturer.name}}</h2>
-    <div *ngIf="manufacturer.cssClassName">
-      <br />
-      <img src="app/content/{{manufacturer.image}}" />
-      <br /><br />
-    </div>
-    <div>{{manufacturer.blurb}}</div>
-    `,
+  templateUrl: './app/views/mfgDetail.html',
   providers: [ManufacturerService]  
 })
 export class ManufacturerDetailComponent {

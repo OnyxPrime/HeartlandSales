@@ -4,7 +4,7 @@ import { ManufacturerService } from '../services/manufacturer.service';
 import { Manufacturer } from '../models/Manufacturer';
 
 @Component({
-  templateUrl: './home.html',
+  templateUrl: './app/views/home.html',
   styleUrls:  ['node_modules/bootstrap/dist/css/bootstrap.css', 'app/styles/home.component.css'],  
   providers: [ManufacturerService],  
 })
