@@ -10,7 +10,7 @@ app.set('port', (process.env.PORT || 3000));
 app.use(express.static(staticRoot));
 
 app.get('/', function(req, res) {
-    res.sendfile(__dirname+'/index.html')
+    res.sendfile(__dirname+'/index1.html')
 
 });
 
