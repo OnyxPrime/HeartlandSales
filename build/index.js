@@ -29,4 +29,5 @@ app.use(function(req, res, next){
 
 app.listen(app.get('port'), function() {
     console.log('app running on port', app.get('port'));
+    console.log('static root is ', staticRoot);
 });

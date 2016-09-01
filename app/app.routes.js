@@ -6,5 +6,5 @@ var routes = [
     { path: 'Manufacturer/:id', component: manufacturer_detail_component_1.ManufacturerDetailComponent },
     { path: '**', component: home_component_1.HomeComponent }
 ];
-exports.routing = router_1.RouterModule.forRoot(routes);
+exports.routing = router_1.RouterModule.forRoot(routes, { useHash: false });
 //# sourceMappingURL=app.routes.js.map
