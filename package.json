@@ -20,7 +20,7 @@
     "typings": "typings",
     "webdriver:update": "webdriver-manager update",
     "build": "tsc && gulp",
-    "prod": "npm run build && cd build && npm i && node index.js"
+    "prod": "npm run build && cd build && npm i && node server.js"
   },
   "keywords": [],
   "author": "",
