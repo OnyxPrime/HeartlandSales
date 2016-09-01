@@ -27,6 +27,8 @@ app.use(function(req, res, next){
 
 });
 
+app.all('*', function (req, res) { res.status(200).sendFile(path.join(__dirname, '/index.html')); });
+
 app.listen(app.get('port'), function() {
     console.log('app running on port', app.get('port'));
     console.log('static root is ', staticRoot);
