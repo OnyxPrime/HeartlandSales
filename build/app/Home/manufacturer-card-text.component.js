@@ -21,7 +21,7 @@ var ManufacturerCardTextComponent = (function () {
         core_1.Component({
             selector: 'manufacturer-card-text',
             styleUrls: ['node_modules/bootstrap/dist/css/bootstrap.css', 'app/styles/manufacturer-card.component.css'],
-            template: "\n    <div class=\"module hero\">\n        <div class=\"item\">\n            <div class=\"col-xs-12 col-sm-2\">           \n                \n                    <div class=\"row\">\n                        <div class=\"manufactureText\">{{manufacturer.name}}</div>\n                    </div>\n                    <div class=\"row\">   \n                        <p class=\"stateRep vcenter\">{{manufacturer.statesRepresented}}</p>\n                    </div>\n                \n            </div>\n            <div class=\"hidden-xs col-sm-10 vertical-align content mfgCol\">\n                <div class=\"mfgBorder\">\n                </div>\n                <div class=\"mfgBlurb\">{{manufacturer.blurb}}</div>\n            </div>\n        </div>\n    </div>\n    "
+            templateUrl: './app/views/mfgCardText.html',
         }), 
         __metadata('design:paramtypes', [])
     ], ManufacturerCardTextComponent);
