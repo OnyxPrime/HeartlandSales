@@ -8,6 +8,11 @@
             </p>
         </div>
     </div>    
+    <div *ngIf="mfgImages" class="row sectionImageCarousel row-centered">
+        <div class="section_content">
+            <css-carousel [images]="mfgImages"></css-carousel>     
+        </div>
+    </div>
     <div class="row section2 row-centered">
         <div class="section_content">
             <h2 class="section2_title">Who we represent</h2>

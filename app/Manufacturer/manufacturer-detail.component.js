@@ -8,10 +8,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var manufacturer_service_1 = require('../services/manufacturer.service');
-var Manufacturer_1 = require('../models/Manufacturer');
+var core_1 = require("@angular/core");
+var router_1 = require("@angular/router");
+var manufacturer_service_1 = require("../services/manufacturer.service");
+var Manufacturer_1 = require("../models/Manufacturer");
 var ManufacturerDetailComponent = (function () {
     function ManufacturerDetailComponent(service, router, route) {
         this.service = service;
@@ -29,15 +29,17 @@ var ManufacturerDetailComponent = (function () {
     ManufacturerDetailComponent.prototype.ngOnDestroy = function () {
         this.sub.unsubscribe();
     };
-    ManufacturerDetailComponent = __decorate([
-        core_1.Component({
-            templateUrl: './app/views/mfgDetail.html',
-            providers: [manufacturer_service_1.ManufacturerService]
-        }), 
-        __metadata('design:paramtypes', [manufacturer_service_1.ManufacturerService, router_1.Router, router_1.ActivatedRoute])
-    ], ManufacturerDetailComponent);
     return ManufacturerDetailComponent;
 }());
+ManufacturerDetailComponent = __decorate([
+    core_1.Component({
+        templateUrl: './app/views/mfgDetail.html',
+        providers: [manufacturer_service_1.ManufacturerService]
+    }),
+    __metadata("design:paramtypes", [manufacturer_service_1.ManufacturerService,
+        router_1.Router,
+        router_1.ActivatedRoute])
+], ManufacturerDetailComponent);
 exports.ManufacturerDetailComponent = ManufacturerDetailComponent;
 /*
 Copyright 2016 Google Inc. All Rights Reserved.

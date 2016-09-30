@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Router, ActivatedRoute }  from '@angular/router';
 import { ManufacturerService } from '../services/manufacturer.service';
 import { Manufacturer } from '../models/Manufacturer';
+import { Image } from '../models/image';
 
 @Component({
   templateUrl: './app/views/home.html',
@@ -11,9 +12,12 @@ import { Manufacturer } from '../models/Manufacturer';
 export class HomeComponent {
   
   manufacturers: Manufacturer[];
+  mfgImages: Promise<Image[]>;
 
   constructor(manService: ManufacturerService, private router: Router){
     manService.getManufacturers().then(x=>this.manufacturers = x );
+    //manService.getManufacturerImages().then(x=>this.mfgImages = x);
+    this.mfgImages = manService.getManufacturerImages();
   }
 
   onSelect(manufacturer: Manufacturer){

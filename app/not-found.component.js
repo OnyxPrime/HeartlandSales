@@ -8,18 +8,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+var core_1 = require("@angular/core");
 var PageNotFoundComponent = (function () {
     function PageNotFoundComponent() {
     }
-    PageNotFoundComponent = __decorate([
-        core_1.Component({
-            template: "\n    <h2>Page Not Found</h2>\n    "
-        }), 
-        __metadata('design:paramtypes', [])
-    ], PageNotFoundComponent);
     return PageNotFoundComponent;
 }());
+PageNotFoundComponent = __decorate([
+    core_1.Component({
+        template: "\n    <h2>Page Not Found</h2>\n    "
+    }),
+    __metadata("design:paramtypes", [])
+], PageNotFoundComponent);
 exports.PageNotFoundComponent = PageNotFoundComponent;
 /*
 Copyright 2016 Google Inc. All Rights Reserved.

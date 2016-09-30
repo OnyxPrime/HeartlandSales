@@ -1,0 +1,69 @@
+.carousel{
+    overflow:hidden;
+    width:100%;
+}
+.carousel img{
+    display:block;
+    width:50%;
+}
+.carousel h2{
+    margin-bottom: 0;
+    font-size:1em;
+    padding:1.5em 0.5em 1.5em 0.5em;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    text-align:center;
+    color:#fff;
+    background-color:rgba(0,0,0,0.75);
+    text-transform: uppercase;
+}
+
+@keyframes carousel{
+    0%    { left:-5%; }
+    3.5%   { left:-5%; }
+    4.5% { left:-105%; }
+    8% { left:-105%; }
+    9%   { left:-205%; }
+    12.5%   { left:-205%; }
+    13.5% { left:-305%; }
+    17% { left:-305%; }
+    18%   { left:-405%; }
+    21.5%   { left:-405%; }
+    22.5%   { left:-505%; }
+    26%   { left:-505%; }
+    27%   { left:-605%; }
+    30.5%   { left:-605%; }
+    31.5%   { left:-705%; }
+    35%   { left:-705%; }
+    36%   { left:-805%; }
+    39.5%   { left:-805%; }
+    40.5%   { left:-905%; }
+    44%   { left:-905%; }
+    45%   { left:-1005%; }
+    49%   { left:-1005%; }
+    50%   { left:-1105%; }
+    53.5%   { left:-1105%; }
+    54.5%   { left:-1005%; }
+    58%   { left:-1005%; }
+    59%   { left:-905%; }
+    62.5%   { left:-905%; }
+    63.5%   { left:-805%; }
+    67%   { left:-805%; }
+    68%   { left:-705%; }
+    71.5%   { left:-705%; }
+    72.5%   { left:-605%; }
+    76%   { left:-605%; }
+    77%   { left:-505%; }
+    80.5%   { left:-505%; }
+    81.5%   { left:-405%; }
+    85%   { left:-405%; }
+    86% { left:-305%; }
+    89.5% { left:-305%; }
+    90.5%   { left:-205%; }
+    94%   { left:-205%; }
+    95% { left:-105%; }
+    99.5% { left:-105%; }
+    100%  { left:-5%; }
+}

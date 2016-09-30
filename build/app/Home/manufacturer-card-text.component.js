@@ -8,24 +8,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var manufacturer_1 = require('../models/manufacturer');
+var core_1 = require("@angular/core");
+var manufacturer_1 = require("../models/manufacturer");
 var ManufacturerCardTextComponent = (function () {
     function ManufacturerCardTextComponent() {
     }
-    __decorate([
-        core_1.Input(), 
-        __metadata('design:type', manufacturer_1.Manufacturer)
-    ], ManufacturerCardTextComponent.prototype, "manufacturer", void 0);
-    ManufacturerCardTextComponent = __decorate([
-        core_1.Component({
-            selector: 'manufacturer-card-text',
-            styleUrls: ['node_modules/bootstrap/dist/css/bootstrap.css', 'app/styles/manufacturer-card.component.css'],
-            templateUrl: './app/views/mfgCardText.html',
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ManufacturerCardTextComponent);
     return ManufacturerCardTextComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", manufacturer_1.Manufacturer)
+], ManufacturerCardTextComponent.prototype, "manufacturer", void 0);
+ManufacturerCardTextComponent = __decorate([
+    core_1.Component({
+        selector: 'manufacturer-card-text',
+        styleUrls: ['node_modules/bootstrap/dist/css/bootstrap.css', 'app/styles/manufacturer-card.component.css'],
+        templateUrl: './app/views/mfgCardText.html',
+    }),
+    __metadata("design:paramtypes", [])
+], ManufacturerCardTextComponent);
 exports.ManufacturerCardTextComponent = ManufacturerCardTextComponent;
 //# sourceMappingURL=manufacturer-card-text.component.js.map
