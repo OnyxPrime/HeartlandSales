@@ -42,10 +42,9 @@ var ManufacturerService = (function () {
         return Promise.resolve(this.manufacturers).then(function (ms) { return ms.find(function (m) { return m.id === +id; }); });
     };
     ManufacturerService.prototype.getManufacturerImages = function () {
-        var _this = this;
         //return Promise.resolve(this.images);
         return new Promise(function (resolve) {
-            resolve(_this.images);
+            resolve([]);
         });
     };
     return ManufacturerService;

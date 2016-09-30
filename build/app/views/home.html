@@ -8,7 +8,7 @@
             </p>
         </div>
     </div>    
-    <div class="row sectionImageCarousel row-centered">
+    <div *ngIf="mfgImages" class="row sectionImageCarousel row-centered">
         <div class="section_content">
             <css-carousel [images]="mfgImages"></css-carousel>     
         </div>
