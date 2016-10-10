@@ -59,7 +59,7 @@
 }
 
 .goss{
-    height: 50px;
+    height: 45px;
     width: auto;
     margin-bottom:10px;
     background-image: url('./app/content/GossLogoLight.svg');
@@ -115,7 +115,7 @@
 .mfgBlurb{
     text-align: left;
     margin-left: 15px;
-    text-overflow: wrap;
+    word-wrap: break-word;
     position: relative;
 }
 
@@ -130,8 +130,111 @@
 
 .mfgRow{
     height: 100%;
+    padding: 20px;
 }
 
 .mfgCol{
   padding: 0;
+}
+
+@media (max-width: 600px) {
+    .content {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+        height: 110px;
+        position:relative;
+        padding: 0 auto;
+    }
+
+.mfgBorder{
+    background: white;
+    height:100px;
+    width:1px;
+    margin-top: 2px;
+    margin-right: 0px;
+    position: absolute;
+}
+}
+
+@media (max-width: 1024px) {
+    .module {
+        text-align: center;
+        color: white;
+        height: 150px;
+        min-height: 100px;        
+        min-width: 220px;
+        background-color: #112252;
+        border-radius: 2px;
+    }
+    .content {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+        height: 150px;
+        position:relative;
+        padding: 0 auto;
+    }
+
+    .mfgBorder{
+        background: white;
+        height:145px;
+        width:1px;
+        margin-top: 2px;
+        margin-right: 0px;
+        position: absolute;
+    }
+
+    .mfgRow{
+        height: 100%;
+        padding:35px;
+    }
+    
+    .vertical-align {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    .americanStandard{
+        height: 50px;
+        width:auto;
+        margin-bottom:10px;
+        background-image: url('./app/content/AmericanStandardLogoLight.svg');
+    }
+
+    .blackSwan {
+        height: 50px;
+        background-image: url('./app/content/BlackSwanLogoLight.svg');
+    }
+
+    .safetyTubs{
+        height: 35px;
+        width: auto;
+        margin-bottom:10px;
+        background-image: url('./app/content/SafetyTubsLogo.svg');
+    }
+
+    .vpcGlobal{
+        height: 35px;
+        background-image: url('./app/content/GossLogoLight.svg');
+    }
+
+    .superGreen{
+        height: 35px;
+        background-image: url('./app/content/GossLogoLight.svg');
+    }
+
+    .yanex{
+        height: 35px;
+        background-image: url('./app/content/GossLogoLight.svg');
+    }
+
+    .goss{
+        height: 35px;
+        width: auto;
+        margin-bottom:10px;
+        background-image: url('./app/content/GossLogoLight.svg');
+        background-position: center
+    }
 }

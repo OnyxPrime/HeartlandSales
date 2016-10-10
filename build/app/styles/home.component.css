@@ -89,10 +89,7 @@ p {
     /* inline-block space fix */
     margin-right:-4px;
 }
-.col-fixed {
-    /* custom width */
-    /*width:320px;*/
-}
+
 
 
 @media (max-width: 600px) {
@@ -110,4 +107,7 @@ p {
     .module {
       min-width: 60px;
     }
+  .manufacturer {
+    height: 160px;  
+  }
 }
