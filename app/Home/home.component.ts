@@ -21,7 +21,8 @@ export class HomeComponent {
   }
 
   onSelect(manufacturer: Manufacturer){
-    this.router.navigate(['/Manufacturer', manufacturer.id]);
+    //this.router.navigate(['/Manufacturer', manufacturer.id]);
+    window.location.href = manufacturer.url;
   }
 }
 

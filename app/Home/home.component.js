@@ -20,7 +20,8 @@ var HomeComponent = (function () {
         this.mfgImages = manService.getManufacturerImages();
     }
     HomeComponent.prototype.onSelect = function (manufacturer) {
-        this.router.navigate(['/Manufacturer', manufacturer.id]);
+        //this.router.navigate(['/Manufacturer', manufacturer.id]);
+        window.location.href = manufacturer.url;
     };
     return HomeComponent;
 }());

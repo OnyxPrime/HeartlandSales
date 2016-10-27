@@ -5,4 +5,5 @@ export class Manufacturer {
     statesRepresented: string;
     blurb: string;
     image: string;
+    url: string;
 }
