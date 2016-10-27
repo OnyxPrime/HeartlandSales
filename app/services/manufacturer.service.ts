@@ -27,7 +27,7 @@ export class ManufacturerService{
                 statesRepresented:'OK | KS | MO | AR', 
                 blurb:'Goss offers a wide variety of torches and accessories to fit any contractors need.  Our high quality Oxy-Fuel, Air-Acetylene, Air-Propane, Air-Propylene ( MAP-Pro™) and Nitrogen equipment is individually tested and engineered for performance.  We also provide high quality replacement cutting, welding, and heating tips for popular torches.', 
                 image: 'GossLogo.png', 
-                url: '' 
+                url: 'http://www.gossonline.com/' 
             },
 //            {id: 4, cssClassName: 'safetyTubs', name:'Safety Tubs', statesRepresented:'OK', blurb:'Safety Tubs® designs and manufactures award winning acrylic and gelcoat walk in bathtubs. Our revolutionary walk in tubs are the premium bathtub for a safer, healthier and more comfortable bathing experience.', image: 'SafetyTubsLogo.png' },
             {
