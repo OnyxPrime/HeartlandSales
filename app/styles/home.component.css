@@ -24,6 +24,9 @@ p {
   margin-right:30px;
   margin-left:30px;
 }
+.section_content h2 {
+  color:#112252;
+}
 .section2{
   margin-top:0;
   margin-bottom:0;
@@ -35,11 +38,12 @@ p {
 }
 .section3{
   background-color: #4FD0F5;
-  min-height: 200px;
+  height: 160px;
 }
 .section3 .section_content
 {
-  color: #F5F5F5;
+  color: #112252;
+  display: flex;
 }
 .sectionImageCarousel
 {
@@ -75,6 +79,7 @@ p {
 }
 .wwr_text{
   width: 25%;
+  color:#112252;
 }
 
 /* centered columns styles */
@@ -90,15 +95,78 @@ p {
     margin-right:-4px;
 }
 
+.phhc_logo{
+  padding-top: 40px;
+}
 
+.aspe_logo{
+  padding-top:55px;
+}
+
+.org_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+  max-width: 200px;
+  width:100px;
+}
+
+.org_div{
+  height:100%;
+  padding-left: 15px;
+}
+
+.vertical-align {
+        display: flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+
+.contact_infol2{
+  display: block;
+  height:100%;
+}
+
+.contact_info{
+  height:100%;
+}
 
 @media (max-width: 600px) {
     .module {
       font-size: 10px;
       max-height: 75px; }
-      .wwr_text{
-        width: 100%;
-      }
+    .wwr_text{
+      width: 100%;
+    }
+    .section3 .section_content
+    {
+      color: #112252;
+    }
+    .contact_info{
+      text-align: left;
+      height:100%;
+    }
+    
+}
+@media (max-width: 768px) {
+    .wwr_text{
+      width: 100%;
+    }
+    .section3 .section_content
+    {
+      color: #112252;
+    }
+    .contact_info{
+      text-align: left;
+      height:100%
+    }
+    .contact_infol2{
+      display: block;
+      text-align: left;
+      width:100%;
+    }
 }
 @media (max-width: 1024px) {
     .grid {
