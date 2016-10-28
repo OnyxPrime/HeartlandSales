@@ -30,7 +30,9 @@
 
 .blackSwan {
     height: 50px;
-    background-image: url('./app/content/BlackSwanLogoLight.svg');
+    width: auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/BlackSwanLight.svg');
 }
 
 .safetyTubs{
@@ -42,20 +44,29 @@
 
 .vpcGlobal{
 
-    height: 35px;
-    background-image: url('./app/content/GossLogoLight.svg');
+    height: 50px;
+    width: auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/VpcGlobalLight.svg');
+    background-position: center;
 }
 
 .superGreen{
 
-    height: 35px;
-    background-image: url('./app/content/GossLogoLight.svg');
+    height: 50px;
+    width: auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/SupergreenLight.svg');
+    background-position: center;
 }
 
 .yanex{
 
-    height: 35px;
-    background-image: url('./app/content/GossLogoLight.svg');
+    height: 65px;
+    width: auto;
+    margin-bottom:10px;
+    background-image: url('./app/content/YanexIndustriesLight.svg');
+    background-position: center;
 }
 
 .goss{
@@ -63,7 +74,7 @@
     width: auto;
     margin-bottom:10px;
     background-image: url('./app/content/GossLogoLight.svg');
-    background-position: center
+    background-position: center;
 }
 
 /* content styles */
@@ -204,7 +215,7 @@
 
     .blackSwan {
         height: 50px;
-        background-image: url('./app/content/BlackSwanLogoLight.svg');
+        background-image: url('./app/content/BlackSwanLight.svg');
     }
 
     .safetyTubs{
@@ -215,18 +226,19 @@
     }
 
     .vpcGlobal{
-        height: 35px;
-        background-image: url('./app/content/GossLogoLight.svg');
+        height: 50px;
+        background-image: url('./app/content/VpcGlobalLight.svg');
     }
 
     .superGreen{
-        height: 35px;
-        background-image: url('./app/content/GossLogoLight.svg');
+        height: 50px;
+        background-image: url('./app/content/SupergreenLight.svg');
     }
 
     .yanex{
-        height: 35px;
-        background-image: url('./app/content/GossLogoLight.svg');
+        height: 50px;
+        background-image: url('./app/content/YanexIndustriesLight.svg');
+        background-position: center
     }
 
     .goss{
