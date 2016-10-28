@@ -1,8 +1,9 @@
- <div class="carousel">
+<div class="carousel">
   <ul class="slides">
-    <li *ngFor="let image of images">
-      <h2>{{image.title}}</h2>
+    <li *ngFor="let image of images | async">
+      <center>
       <img src="{{image.url}}" alt="">
+      </center>
     </li>
   </ul>
 </div>

@@ -56,18 +56,24 @@ export class ManufacturerService{
                 url: 'http://yanexindustries.com/' }];
 
     private images: Image[] = [
-        {title: 'American Standard Faucet', url: '/app/content/mfgimages/AS1.jpg'},
-        {title: 'American Standard Faucet', url: '/app/content/mfgimages/AS2.jpg'},
-        {title: 'American Standard Toilet', url: '/app/content/mfgimages/AS3.jpg'},
-        {title: 'American Standard Sink', url: '/app/content/mfgImages/AS5.jpg'},
-        {title: 'Goss', url: '/app/content/mfgimages/G1.jpg'},
-        {title: 'Goss', url: '/app/content/mfgimages/G2.jpg'},
-        {title: 'Goss', url: '/app/content/mfgimages/G3.jpg'},
-        {title: 'Goss', url: '/app/content/mfgimages/G4.jpg'},
-        {title: 'Super Green', url: '/app/content/mfgimages/SG1.png'},
-        {title: 'Super Green', url: '/app/content/mfgimages/SG2.jpg'},
-        {title: 'VPC', url: '/app/content/mfgimages/VPC1.jpg'},
-        {title: 'VPC', url: '/app/content/mfgimages/VPC2.jpg'}
+        //{ title: 'American Standard Faucet', url: '/app/content/mfgimages/AS1.jpg' },
+        //{ title: 'American Standard Faucet', url: '/app/content/mfgimages/AS2.jpg' },
+        //{ title: 'American Standard Toilet', url: '/app/content/mfgimages/AS3.jpg' },
+        //{ title: 'American Standard Sink', url: '/app/content/mfgImages/AS5.jpg' },
+        //{ title: 'Goss', url: '/app/content/mfgimages/G1.jpg' },
+        //{ title: 'Goss', url: '/app/content/mfgimages/G2.jpg' },
+        //{ title: 'Goss', url: '/app/content/mfgimages/G3.jpg' },
+        //{ title: 'Goss', url: '/app/content/mfgimages/G4.jpg' },
+        //{ title: 'Super Green', url: '/app/content/mfgimages/SG1.png' },
+        //{ title: 'Super Green', url: '/app/content/mfgimages/SG2.jpg' },
+        //{ title: 'VPC', url: '/app/content/mfgimages/VPC1.jpg' },
+        //{ title: 'VPC', url: '/app/content/mfgimages/VPC2.jpg' }
+        { title: 'American Standard Faucet', url:'./app/content/AmericanStandardDark.svg'},
+        { title: 'Black Swan', url:'./app/content/BlackSwanDark.svg'},
+        { title: 'Goss', url:'./app/content/GossDark.svg'},
+        { title: 'VPC', url:'./app/content/VpcGlobalDark.svg'},
+        { title: 'SuperGreen, Inc.', url:'./app/content/SuperGreenDark.svg'},
+        { title: 'Yanex Industries', url:'./app/content/YanexIndustriesDark.svg'},
     ]
     getManufacturers() {       
         return Promise.resolve(this.manufacturers);
@@ -78,9 +84,7 @@ export class ManufacturerService{
     }
 
     getManufacturerImages(){
-        //return Promise.resolve(this.images);
-        return new Promise(resolve => {             
-                 resolve([]);
-        });
+        return Promise.resolve(this.images);
+        //return new Promise(resolve => { resolve([]); });
     }
 }

@@ -20,7 +20,7 @@ var CSSCarouselComponent = (function () {
         console.log(this.images);
         this.images.then(function (data) {
             var numberOfPanes = data.length;
-            _this.slideWidth = (numberOfPanes * 50);
+            _this.slideWidth = (numberOfPanes * 25);
             _this.slideElementWidth = (100 / numberOfPanes);
             console.log(_this.slideWidth);
         });
@@ -42,9 +42,8 @@ __decorate([
 CSSCarouselComponent = __decorate([
     core_1.Component({
         selector: 'css-carousel',
-        //templateUrl:'app/components/csscarousel/carousel.html',
-        styleUrls: ['app/components/csscarousel/carousel.css'],
-        template: "\n  <style>\n  .slides{\n      list-style:none;\n      position:relative;\n      /*width: {{slideWidth}}%;  Number of panes * 100% */\n      overflow:hidden; /* Clear floats */\n          /* Slide effect Animations*/\n      -moz-animation:carousel 30s infinite;\n      -webkit-animation:carousel 30s infinite;\n      animation:carousel 30s infinite;\n  }\n  .slides > li{\n      position:relative;\n      float:left;\n      /* width: 8.33%; 100 / number of panes */\n  }\n  </style>\n   <div class=\"carousel\">\n     <ul class=\"slides\" [ngStyle]=\"{'width': slideWidth+'%'}\">\n       <li *ngFor=\"let image of images | async\" [ngStyle]=\"{width: slideElementWidth+'%'}\">\n         <h2>{{image.title}}</h2>\n         <img src=\"{{image.url}}\" alt=\"\">\n       </li>\n     </ul>\n   </div>\n  "
+        templateUrl: 'app/components/csscarousel/carousel.html',
+        styleUrls: ['app/components/csscarousel/carousel.css']
     }),
     __metadata("design:paramtypes", [])
 ], CSSCarouselComponent);

@@ -8,8 +8,8 @@
             </p>
         </div>
     </div>    
-    <div *ngIf="mfgImages.Length > 0" class="row sectionImageCarousel row-centered">
-        <div class="section_content">
+    <div *ngIf="[(mfgImages)].length > 0" class="row sectionImageCarousel row-centered">
+        <div class="">
             <css-carousel [images]="mfgImages"></css-carousel>     
         </div>
     </div>
